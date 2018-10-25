@@ -9,12 +9,18 @@
 # Usage
 
 Install pugserver :
-```
+```sh
 npm install -g pugserver
 ```
 
-Start server :
+Get project :
+```sh
+git clone --depth=1 https://github.com/LeoAttn/MediaQueries.git
 ```
+
+Start server :
+```sh
+cd MediaQueries
 pugserver ./
 ```
 
