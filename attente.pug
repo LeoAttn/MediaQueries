@@ -1,0 +1,32 @@
+extends layout
+
+block content
+    h4 Votre voiture arrivera à
+    div.ui.input.fluid
+        input(type='text' placeholder='Position de départ' readonly)
+
+    h4
+        span= 'dans  '
+        div.ui.button.basic 5
+        span= '  minutes'
+
+    #basicMap(style='height:50vh')
+
+    br
+    br
+    a.fluid.ui.button(href='index.pug') Retour à l'acceuil
+
+
+block scripts
+    script(src='OpenLayers/OpenLayers.js')
+    script.
+        function init() {
+            map = new OpenLayers.Map("basicMap");
+            var fromProjection = new OpenLayers.Projection("EPSG:4326");
+            var toProjection = new OpenLayers.Projection("EPSG:900913");
+
+            map.addLayer(new OpenLayers.Layer.OSM());
+            map.setCenter(new OpenLayers.LonLat(2.30, 48.82).transform( fromProjection, toProjection), 10);
+        }
+        window.onload = init;
+

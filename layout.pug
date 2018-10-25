@@ -1,0 +1,39 @@
+doctype html
+html(lang='fr')
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        meta(http-equiv='x-ua-compatible', content='ie-edge')
+
+        link(rel='stylesheet', type='text/css', href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css')
+        link(rel='stylesheet', href='style.css')
+        block stylesheets
+
+        title Media Queries
+
+    body
+        #main.ui.container
+            br
+            block content
+
+        .ui.menu.bottom.fixed.borderless.five.item
+            a.item(href='index.pug')
+                i.icon.home
+                span.desktop-size Accueil
+            a.item
+                i.icon.file.alternate
+                span.desktop-size Order
+            a.item
+                i.icon.user
+                span.desktop-size Profil
+            a.item(href='annulation.pug')
+                i.icon.envelope
+                span.desktop-size Notifications
+            a.item
+                i.icon.cog
+                span.desktop-size Settings
+
+
+        script(src='https://code.jquery.com/jquery-3.1.1.min.js', integrity='sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=', crossorigin='anonymous')
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.js')
+        block scripts

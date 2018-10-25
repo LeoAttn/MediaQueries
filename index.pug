@@ -1,0 +1,22 @@
+extends layout
+
+block content
+    h1 Bonjour
+        h2 Nom Prénom
+        br
+        div.ui.form
+            .two.fields
+                .field
+                    label Départ
+                    input(type='text', placeholder='Position actuelle')
+                .field
+                    label Arrivée
+                    input(type='text', placeholder='Lieu de travail')
+            .two.fields
+                .field
+                    label Le
+                    input(type='date')
+                .field
+                    label A
+                    input(type='time')
+            a.fluid.ui.button(href='attente.pug') Commander

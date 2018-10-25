@@ -1,0 +1,18 @@
+extends layout
+
+block content
+    div.ui.icon.header.center.aligned
+        i.icon.frown.outline.massive
+    h2.ui.center.header.aligned Annulation confirmée
+
+    br
+
+    div.ui.container.text
+        h4 Votre annulation pour l'adresse
+        div.ui.input.fluid
+            input(type='text' placeholder='Adresse de départ' readonly)
+        h4 a bien été prise en compte
+
+    br
+    br
+    a.fluid.ui.button(href='index.pug') Retour à l'acceuil
