@@ -10,7 +10,7 @@ block content
         div.ui.button.basic 5
         span= '  minutes'
 
-    #basicMap(style='height:50vh')
+    open-map
 
     br
     br
@@ -22,15 +22,6 @@ block content
 
 
 block scripts
-    script(src='https://cdnjs.cloudflare.com/ajax/libs/openlayers/2.11/OpenLayers.js')
-    script.
-        function init() {
-            map = new OpenLayers.Map("basicMap");
-            var fromProjection = new OpenLayers.Projection("EPSG:4326");
-            var toProjection = new OpenLayers.Projection("EPSG:900913");
-
-            map.addLayer(new OpenLayers.Layer.OSM());
-            map.setCenter(new OpenLayers.LonLat(2.30, 48.82).transform( fromProjection, toProjection), 10);
-        }
-        window.onload = init;
+    //script(src='https://cdnjs.cloudflare.com/ajax/libs/openlayers/2.11/OpenLayers.js')
+    script(src='map.js', async)
 
