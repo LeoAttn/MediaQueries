@@ -8,7 +8,7 @@
 
 # Usage
 
-Install a pug server :
+Install pugserver :
 ```
 npm install -g pugserver
 ```
@@ -19,6 +19,8 @@ pugserver ./
 ```
 
 Open your browser to http://localhost:8080/index.pug
+
+You can change the port with `pugserver -p [PORT] ./`
 
 # License
 
