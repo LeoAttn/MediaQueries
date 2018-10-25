@@ -2,6 +2,10 @@
     margin-bottom: 4em;
 }
 
+#navbar {
+    z-index: 1000;
+}
+
 /* Navbar text */
 @media only screen and (max-width: 600px) {
     .desktop-size {

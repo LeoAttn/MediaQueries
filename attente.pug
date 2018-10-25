@@ -2,7 +2,7 @@ extends layout
 
 block content
     h4 Votre voiture arrivera à
-    div.ui.input.fluid
+    .ui.input.fluid
         input(type='text' placeholder='Position de départ' readonly)
 
     h4
@@ -14,7 +14,11 @@ block content
 
     br
     br
-    a.fluid.ui.button(href='index.pug') Retour à l'acceuil
+
+    .ui.buttons.fluid
+        a.ui.button(href='index.pug') Retour à l'acceuil
+        .or(data-text='ou')
+        a.ui.button.negative(href='annulation.pug') Annuler la commande
 
 
 block scripts
