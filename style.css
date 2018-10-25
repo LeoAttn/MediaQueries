@@ -2,16 +2,6 @@
     margin-bottom: 4em;
 }
 
-/*h1 {
-    color: red;
-}
-
-@media screen and (min-width: 800px) and (max-width: 1000px){
-    h1 {
-        color: green;
-    }
-}*/
-
 /* Navbar text */
 @media only screen and (max-width: 600px) {
     .desktop-size {
