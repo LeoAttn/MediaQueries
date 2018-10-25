@@ -17,9 +17,8 @@ html(lang='fr')
             block content
 
         #navbar.ui.menu.bottom.fixed.borderless.five.item
-            a.item(href='index.pug')
-                i.icon.home
-                span.desktop-size Accueil
+            nav-item(data-url='index.pug', data-icon='home', data-name='Accueil')
+
             a.item
                 i.icon.file.alternate
                 span.desktop-size Order
@@ -36,4 +35,5 @@ html(lang='fr')
 
         script(src='https://code.jquery.com/jquery-3.1.1.min.js', integrity='sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=', crossorigin='anonymous')
         script(src='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.js')
+        script(src='navbar-item.js', async)
         block scripts
